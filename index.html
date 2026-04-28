@@ -798,7 +798,17 @@ mn:{
     {q:'Монгол бөхд ялагдах нөхцөл юу вэ?',opts:['Цаг дуусах','Биеийн хэсэг газарт хүрэх','Гурав алдах','Сул харагдах'],a:1,e:'Өвдөг, тохой, нуруу, толгой газарт хүрэхэд ялагдана.'},
     {q:"'Суйлах' мэх юу вэ?",opts:['Дээрээс дарах','Хөлөөр тэнцвэр алдуулах','Гараар хамах','Буцаж давших'],a:1,e:'Суйлах — хурдан хөлний хөдөлгөөнөөр тэнцвэрийг алдуулна.'},
     {q:'Монголын Наадамд ямар 3 тоглоом ордог вэ?',opts:['Бөх, Хөл бөмбөг, Шагай','Бөх, Сур харваа, Морин уяа','Бөх, Сагсан бөмбөг, Сур','Шатар, Бөх, Уяа'],a:1,e:'Монголын наадмын гурван тоглоом: Бөх, Сур харваа, Морин уяа.'},
-    {q:"'Дэвэх' гэж юу вэ?",opts:['Мэхний нэр','Цолны нэр','Барилдааны өмнөх ёслол','Дэвжээний нэр'],a:2,e:'Дэвэх — барилдааны өмнө болон дараа бүргэд шиг гараа дэлгэж хийдэг ёслол.'}
+    {q:"'Дэвэх' гэж юу вэ?",opts:['Мэхний нэр','Цолны нэр','Барилдааны өмнөх ёслол','Дэвжээний нэр'],a:2,e:'Дэвэх — барилдааны өмнө болон дараа бүргэд шиг гараа дэлгэж хийдэг ёслол.'},
+    {q:'Бөхийн зодог, шуудаг гэж юу вэ?',opts:['Барилдааны дүрэм','Монгол бөхийн уламжлалт өмсгөл','Дасгалын хэрэгсэл','Барилдааны газар'],a:1,e:'Зодог — богино ханцуйт цамц, шуудаг — богино өмд. Монгол бөхийн уламжлалт өмсгөл.'},
+    {q:'Монгол бөхд хугацааны хязгаар байдаг уу?',opts:['Тийм, 30 минут','Тийм, 60 минут','Үгүй, хязгаар байхгүй','Тийм, 10 минут'],a:2,e:'Монгол бөхд хугацааны хязгаар байхгүй. Нэг нь газар унах хүртэл барилддаг.'},
+    {q:'Гарьд хэд дэх цол вэ?',opts:['2-р цол','3-р цол','4-р цол','5-р цол'],a:2,e:'Гарьд — 4-р цол. Начин → Харцага → Заан → Гарьд → Арслан → Аварга гэсэн дарааллаар.'},
+    {q:'Засагч гэж хэн бэ?',opts:['Шүүгч','Бөхийн дагалдагч туслах','Тэмцээний зохион байгуулагч','Анагаах эмч'],a:1,e:'Засагч — бөхийн дагалдагч. Барилдааны өмнө зодгийн уяасыг боож, урам зориг өгдөг.'},
+    {q:'Шагай гэж юу вэ?',opts:['Монгол хэрэглүүр','Хонины ясаар хийсэн уламжлалт тоглоом','Бөхийн мэх','Хөгжмийн зэмсэг'],a:1,e:'Шагай — хонь, ямааны шагайн ясаар хийсэн уламжлалт Монгол тоглоом.'},
+    {q:'Морин хуур ямар зэмсэг вэ?',opts:['Үлээвэр','Цохивор','Утсан хөвч татдаг','Цохих бөмбөр'],a:2,e:'Морин хуур — морины сүүлний үсэн хөвчтэй уламжлалт Монгол утсан хөгжмийн зэмсэг.'},
+    {q:'Улсын наадамд хэдэн бөх оролцдог вэ?',opts:['256','512','1024','128'],a:1,e:'Улсын наадамд 512 бөх оролцдог. 9 давааны системтэй.'},
+    {q:'Монгол бөх хэр жилийн настай уламжлалтай вэ?',opts:['1000 жил','3000 жил','7000 гаруй жил','500 жил'],a:2,e:'Монгол бөх нь 7000 гаруй жилийн түүхтэй ертөнцийн хамгийн эртний тэмцлийн урлагийн нэг.'},
+    {q:"Бөхийн цолын эхний цол аль нь вэ?",opts:['Заан','Харцага','Начин','Арслан'],a:2,e:'Начин — бөхийн хамгийн эхний цол. Шувуудын хаан болох начнаар нэрлэсэн.'},
+    {q:'Монгол бөх дэлхийн аль улсад гаралтай вэ?',opts:['Хятад','Монгол','Казакстан','Орос'],a:1,e:'Монгол бөх (Бөх барилдаан) нь Монгол улсын уламжлалт үндэсний спорт.'}
   ],
   // battle UI text
   oppSelectTitle:'Өрсөлдөгч сонгоорой:',
@@ -962,7 +972,17 @@ en:{
     {q:'How do you lose in Mongolian wrestling?',opts:['Time runs out','Body part touches ground','Three misses','Looking weak'],a:1,e:'You lose when any body part except feet (knee, elbow, back, head) touches the ground.'},
     {q:"What is the 'Sweeping' (Suylakh) move?",opts:['Press from above','Unbalance with legs','Double grab','Counter attack'],a:1,e:'Sweeping — use quick leg movements to knock the opponent off balance.'},
     {q:'What are the 3 games of the Mongolian Naadam?',opts:['Wrestling, Football, Shagai','Wrestling, Archery, Horse Racing','Wrestling, Basketball, Archery','Chess, Wrestling, Racing'],a:1,e:"The three games of Naadam: Wrestling, Archery, and Horse Racing."},
-    {q:"What is 'Devekh'?",opts:['A move name','A rank name','A pre-match ceremony','The arena name'],a:2,e:'Devekh — spreading arms like an eagle before and after a match. It is a sign of respect.'}
+    {q:"What is 'Devekh'?",opts:['A move name','A rank name','A pre-match ceremony','The arena name'],a:2,e:'Devekh — spreading arms like an eagle before and after a match. It is a sign of respect.'},
+    {q:"What are 'Zodog' and 'Shuudag'?",opts:['Wrestling rules','Traditional Mongolian wrestling attire','Training equipment','The wrestling arena'],a:1,e:"Zodog is the short-sleeved jacket and shuudag are the shorts — traditional Mongolian wrestling costume."},
+    {q:'Does Mongolian wrestling have a time limit?',opts:['Yes, 30 minutes','Yes, 60 minutes','No time limit','Yes, 10 minutes'],a:2,e:'Mongolian wrestling has no time limit. The match continues until one wrestler falls.'},
+    {q:'What number rank is Garuda (Garyd)?',opts:['2nd rank','3rd rank','4th rank','5th rank'],a:2,e:'Garuda is the 4th rank. The order is: Falcon → Hawk → Elephant → Garuda → Lion → Champion.'},
+    {q:"What is a 'Zasagch'?",opts:['A referee','A wrestler\'s second/handler','A tournament organizer','A medic'],a:1,e:"Zasagch is the wrestler's handler. They tie the zodog before a match and encourage the wrestler."},
+    {q:'What is Shagai?',opts:['A Mongolian tool','A traditional game using sheep ankle bones','A wrestling move','A musical instrument'],a:1,e:'Shagai is a traditional Mongolian game played with sheep and goat ankle bones.'},
+    {q:'What type of instrument is the Morin Khuur?',opts:['Wind instrument','Percussion','Bowed string instrument','Keyboard'],a:2,e:'The Morin Khuur is a traditional Mongolian bowed string instrument with horsehair strings.'},
+    {q:'How many wrestlers compete in the National Naadam?',opts:['256','512','1024','128'],a:1,e:'512 wrestlers compete in the national Naadam across 9 rounds.'},
+    {q:'How many years of history does Mongolian wrestling have?',opts:['1,000 years','3,000 years','Over 7,000 years','500 years'],a:2,e:'Mongolian wrestling is one of the world\'s oldest martial arts with over 7,000 years of history.'},
+    {q:'What is the first (lowest) rank in Mongolian wrestling?',opts:['Elephant','Hawk','Falcon','Lion'],a:2,e:'Falcon (Nachin) is the starting rank — named after the king of birds.'},
+    {q:'Which country does Mongolian wrestling originate from?',opts:['China','Mongolia','Kazakhstan','Russia'],a:1,e:'Mongolian wrestling (Bökh) is the traditional national sport of Mongolia.'}
   ],
   oppSelectTitle:'Select your opponent:',oppLocked:'🔒 Rank required',
   bRuleSelect:'⚡ Select a move below!',
@@ -1118,7 +1138,16 @@ tr:{
     {q:'ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡᠳᠦ ᠢᠯᠠᠭᠳᠠᠬᠤ ᠨᠥᠬᠥᠴᠡᠯ ᠶᠠᠭᠤ ᠪᠣᠢ?',opts:['ᠴᠠᠭ ᠳᠠᠭᠤᠰᠬᠤ','ᠪᠡᠶᠡ ᠶᠢᠨ ᠬᠡᠰᠡᠭ ᠭᠠᠵᠠᠷ ᠬᠦᠷᠬᠦ','ᠭᠤᠷᠪᠠ ᠠᠯᠳᠠᠬᠤ','ᠰᠤᠯ ᠬᠠᠷᠠᠭᠳᠠᠬᠤ'],a:1,e:'ᠥᠪᠳᠥᠭ᠂ ᠲᠣᠬᠣᠢ᠂ ᠨᠢᠷᠤᠭᠤ᠂ ᠲᠣᠯᠣᠭᠠᠢ ᠭᠠᠵᠠᠷ ᠬᠦᠷᠪᠡᠯ ᠢᠯᠠᠭᠳᠠᠨ᠎ᠠ᠃'},
     {q:"'ᠰᠤᠶᠢᠯᠠᠬᠤ' ᠮᠡᠬᠡ ᠶᠠᠭᠤ ᠪᠣᠢ?",opts:['ᠳᠡᠭᠡᠷ᠎ᠡ ᠡᠴᠡ ᠳᠠᠷᠤᠬᠤ','ᠬᠥᠯᠥᠭᠡᠷ ᠲᠡᠩᠴᠡᠪᠦᠷᠢ ᠠᠯᠳᠠᠭᠤᠯᠬᠤ','ᠭᠠᠷᠠᠷ ᠬᠠᠮᠠᠬᠤ','ᠪᠤᠴᠠᠵᠤ ᠳᠠᠪᠰᠢᠬᠤ'],a:1,e:'ᠰᠤᠶᠢᠯᠠᠬᠤ — ᠬᠤᠷᠳᠤᠨ ᠬᠥᠯᠥ ᠶᠢᠨ ᠬᠥᠳᠡᠯᠭᠡᠭᠡᠨᠡᠷ ᠲᠡᠩᠴᠡᠪᠦᠷᠢ ᠶᠢ ᠠᠯᠳᠠᠭᠤᠯᠤᠨ᠎ᠠ᠃'},
     {q:'ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠨᠠᠭᠠᠳᠤᠮ ᠳᠤ ᠶᠠᠮᠠᠷ 3 ᠲᠣᠭᠯᠠᠭᠠᠮ ᠣᠷᠣᠳᠠᠭ ᠪᠣᠢ?',opts:['ᠪᠥᠬᠡ᠂ ᠬᠥᠯ ᠪᠥᠮᠪᠥᠭᠡ᠂ ᠰᠢᠭᠠᠢ','ᠪᠥᠬᠡ᠂ ᠰᠤᠷ ᠬᠠᠷᠪᠤᠭ᠎ᠠ᠂ ᠮᠣᠷᠢᠨ ᠤᠶᠠᠭ᠎ᠠ','ᠪᠥᠬᠡ᠂ ᠰᠠᠭᠰᠤᠨ ᠪᠥᠮᠪᠥᠭᠡ᠂ ᠰᠤᠷ','ᠰᠢᠲᠠᠷ᠎ᠠ᠂ ᠪᠥᠬᠡ᠂ ᠤᠶᠠᠭ᠎ᠠ'],a:1,e:'ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠨᠠᠭᠠᠳᠤᠮ ᠤᠨ ᠭᠤᠷᠪᠠᠨ ᠲᠣᠭᠯᠠᠭᠠᠮ: ᠪᠥᠬᠡ᠂ ᠰᠤᠷ ᠬᠠᠷᠪᠤᠭ᠎ᠠ᠂ ᠮᠣᠷᠢᠨ ᠤᠶᠠᠭ᠎ᠠ᠃'},
-    {q:"'ᠳᠡᠪᠡᠬᠦ' ᠭᠡᠵᠦ ᠶᠠᠭᠤ ᠪᠣᠢ?",opts:['ᠮᠡᠬᠡ ᠶᠢᠨ ᠨᠡᠷ᠎ᠡ','ᠴᠣᠯᠠᠨ ᠨᠡᠷ᠎ᠡ','ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠡᠮᠦᠨᠡᠬᠢ ᠶᠣᠰᠣᠯᠠᠯ','ᠳᠡᠪᠵᠡᠭ ᠦᠨ ᠨᠡᠷ᠎ᠡ'],a:2,e:'ᠳᠡᠪᠡᠬᠦ — ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠡᠮᠦᠨ᠎ᠡ ᠪᠤᠯᠤᠨ ᠳᠠᠷᠠᠭ᠎ᠠ ᠪᠦᠷᠭᠦᠳ ᠰᠢᠭ ᠭᠠᠷᠠᠭ ᠢᠶᠠᠨ ᠳᠡᠯᠭᠡᠵᠦ ᠬᠢᠳᠡᠭ ᠶᠣᠰᠣᠯᠠᠯ᠃'}
+    {q:"'ᠳᠡᠪᠡᠬᠦ' ᠭᠡᠵᠦ ᠶᠠᠭᠤ ᠪᠣᠢ?",opts:['ᠮᠡᠬᠡ ᠶᠢᠨ ᠨᠡᠷ᠎ᠡ','ᠴᠣᠯᠠᠨ ᠨᠡᠷ᠎ᠡ','ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠡᠮᠦᠨᠡᠬᠢ ᠶᠣᠰᠣᠯᠠᠯ','ᠳᠡᠪᠵᠡᠭ ᠦᠨ ᠨᠡᠷ᠎ᠡ'],a:2,e:'ᠳᠡᠪᠡᠬᠦ — ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠡᠮᠦᠨ᠎ᠡ ᠪᠤᠯᠤᠨ ᠳᠠᠷᠠᠭ᠎ᠠ ᠪᠦᠷᠭᠦᠳ ᠰᠢᠭ ᠭᠠᠷᠠᠭ ᠢᠶᠠᠨ ᠳᠡᠯᠭᠡᠵᠦ ᠬᠢᠳᠡᠭ ᠶᠣᠰᠣᠯᠠᠯ᠃'},
+    {q:'ᠵᠣᠳᠤᠭ᠂ ᠱᠤᠤᠳᠠᠭ ᠭᠡᠵᠦ ᠶᠠᠭᠤ ᠪᠣᠢ?',opts:['ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠳᠦᠷᠢᠮ','ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡ ᠶᠢᠨ ᠤᠯᠠᠮᠵᠢᠯᠠᠯᠲᠤ ᠬᠤᠪᠴᠠᠰᠤ','ᠳᠠᠰᠬᠠᠯ ᠤᠨ ᠬᠡᠷᠡᠭᠰᠡᠯ','ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠭᠠᠵᠠᠷ'],a:1,e:'ᠵᠣᠳᠤᠭ — ᠪᠣᠭᠤᠨᠢ ᠬᠠᠨᠴᠤᠢᠲᠤ ᠴᠠᠮᠴᠠ᠂ ᠱᠤᠤᠳᠠᠭ — ᠪᠣᠭᠤᠨᠢ ᠡᠮᠦᠰᠬᠡᠯ᠃ ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡ ᠶᠢᠨ ᠤᠯᠠᠮᠵᠢᠯᠠᠯᠲᠤ ᠬᠤᠪᠴᠠᠰᠤ᠃'},
+    {q:'ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡᠳᠦ ᠴᠠᠭ ᠤᠨ ᠬᠢᠵᠠᠭᠠᠷᠯᠠᠯ ᠪᠠᠢᠢᠳᠠᠭ ᠤᠤ?',opts:['ᠲᠡᠢᠢᠮᠦ᠂ 30 ᠮᠢᠨᠦᠲ','ᠲᠡᠢᠢᠮᠦ᠂ 60 ᠮᠢᠨᠦᠲ','ᠦᠭᠡᠢ᠂ ᠬᠢᠵᠠᠭᠠᠷᠯᠠᠯ ᠪᠠᠢᠢᠬᠤᠭᠤᠢ','ᠲᠡᠢᠢᠮᠦ᠂ 10 ᠮᠢᠨᠦᠲ'],a:2,e:'ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡᠳᠦ ᠴᠠᠭ ᠤᠨ ᠬᠢᠵᠠᠭᠠᠷᠯᠠᠯ ᠪᠠᠢᠢᠬᠤᠭᠤᠢ᠃ ᠨᠢᠭᠡ ᠨᠢ ᠭᠠᠵᠠᠷ ᠤᠨᠠᠬᠤ ᠬᠦᠷᠲᠡᠯ᠎ᠡ ᠪᠠᠷᠢᠯᠳᠤᠳᠠᠭ᠃'},
+    {q:'ᠭᠠᠷᠤᠳᠢ ᠬᠡᠳᠦ ᠳᠡᠬᠢ ᠴᠣᠯ᠎ᠠ ᠪᠣᠢ?',opts:['2-ᠳᠤᠭᠠᠷ','3-ᠳᠤᠭᠠᠷ','4-ᠳᠤᠭᠠᠷ','5-ᠳᠤᠭᠠᠷ'],a:2,e:'ᠭᠠᠷᠤᠳᠢ — 4-ᠳᠤᠭᠠᠷ ᠴᠣᠯ᠎ᠠ᠃ ᠨᠠᠴᠢᠨ → ᠬᠠᠷᠴᠠᠭᠠᠢ → ᠵᠠᠭᠠᠨ → ᠭᠠᠷᠤᠳᠢ → ᠠᠷᠰᠯᠠᠨ → ᠠᠪᠤᠷᠭᠤ᠃'},
+    {q:'ᠵᠠᠰᠠᠭᠴᠢ ᠭᠡᠵᠦ ᠬᠡᠨ ᠪᠣᠢ?',opts:['ᠱᠦᠦᠭᠡᠴᠢ','ᠪᠥᠬᠡ ᠶᠢᠨ ᠳᠠᠭᠠᠯᠳᠤᠭᠴᠢ','ᠲᠡᠮᠡᠴᠡᠭᠡᠨ ᠦ ᠵᠣᠬᠢᠶᠠᠨ ᠪᠠᠢᠢᠭᠤᠯᠤᠭᠴᠢ','ᠡᠮᠴᠢ'],a:1,e:'ᠵᠠᠰᠠᠭᠴᠢ — ᠪᠥᠬᠡ ᠶᠢᠨ ᠳᠠᠭᠠᠯᠳᠤᠭᠴᠢ᠃ ᠪᠠᠷᠢᠯᠳᠤᠭᠠᠨ ᠤ ᠡᠮᠦᠨ᠎ᠡ ᠵᠣᠳᠤᠭ ᠤᠨ ᠤᠶᠠᠭ᠎ᠠ ᠵᠠᠩᠭᠢᠯᠠᠵᠤ ᠪᠥᠬᠡᠳᠡᠭᠡ ᠤᠷᠠᠮ ᠦᠭᠳᠡᠭ᠃'},
+    {q:'ᠰᠢᠭᠠᠢ ᠭᠡᠵᠦ ᠶᠠᠭᠤ ᠪᠣᠢ?',opts:['ᠮᠣᠩᠭᠣᠯ ᠬᠡᠷᠡᠭᠰᠡᠯ','ᠬᠣᠨᠢᠨ ᠤ ᠶᠠᠰᠤᠭᠠᠷ ᠬᠢᠳᠡᠭ ᠤᠯᠠᠮᠵᠢᠯᠠᠯᠲᠤ ᠲᠣᠭᠯᠠᠭᠠᠮ','ᠪᠥᠬᠡ ᠶᠢᠨ ᠮᠡᠬᠡ','ᠬᠥᠭᠵᠢᠮ ᠦᠨ ᠵᠡᠮᠰᠡᠭ'],a:1,e:'ᠰᠢᠭᠠᠢ — ᠬᠣᠨᠢ᠂ ᠢᠮᠠᠭᠠᠨ ᠤ ᠰᠢᠭᠠᠢᠨ ᠶᠠᠰᠤᠭᠠᠷ ᠬᠢᠳᠡᠭ ᠤᠯᠠᠮᠵᠢᠯᠠᠯᠲᠤ ᠮᠣᠩᠭᠣᠯ ᠲᠣᠭᠯᠠᠭᠠᠮ᠃'},
+    {q:'ᠮᠣᠷᠢᠨ ᠬᠤᠭᠤᠷ ᠶᠠᠮᠠᠷ ᠵᠡᠮᠰᠡᠭ ᠪᠣᠢ?',opts:['ᠦᠯᠡᠳᠡᠭᠡᠷ ᠵᠡᠮᠰᠡᠭ','ᠴᠣᠬᠢᠭᠤᠷ','ᠤᠲᠠᠰᠤᠲᠤ ᠬᠥᠪᠴᠢ ᠲᠠᠲᠠᠳᠠᠭ','ᠪᠥᠮᠪᠦᠭᠡ ᠴᠣᠬᠢᠭᠤᠷ'],a:2,e:'ᠮᠣᠷᠢᠨ ᠬᠤᠭᠤᠷ — ᠮᠣᠷᠢᠨ ᠰᠡᠭᠦᠯ ᠦᠨ ᠦᠰᠦᠨ ᠬᠥᠪᠴᠢᠲᠡᠢ ᠤᠯᠠᠮᠵᠢᠯᠠᠯᠲᠤ ᠮᠣᠩᠭᠣᠯ ᠤᠲᠠᠰᠤᠲᠤ ᠬᠥᠭᠵᠢᠮ ᠦᠨ ᠵᠡᠮᠰᠡᠭ᠃'},
+    {q:'ᠤᠯᠤᠰ ᠤᠨ ᠨᠠᠭᠠᠳᠤᠮ ᠳᠤ ᠬᠡᠳᠦᠨ ᠪᠥᠬᠡ ᠣᠷᠣᠯᠴᠠᠳᠠᠭ ᠪᠣᠢ?',opts:['256','512','1024','128'],a:1,e:'ᠤᠯᠤᠰ ᠤᠨ ᠨᠠᠭᠠᠳᠤᠮ ᠳᠤ 512 ᠪᠥᠬᠡ ᠣᠷᠣᠯᠴᠠᠳᠠᠭ᠃ 9 ᠳᠠᠸᠠᠭᠠᠨ ᠤ ᠰᠢᠰᠲ᠋ᠧᠮ ᠲᠡᠢ᠃'},
+    {q:'ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡ ᠬᠡᠳᠦᠨ ᠵᠢᠯ ᠦᠨ ᠲᠡᠦᠬᠡᠲᠡᠢ ᠪᠣᠢ?',opts:['1000 ᠵᠢᠯ','3000 ᠵᠢᠯ','7000 ᠭᠠᠷᠤᠢ ᠵᠢᠯ','500 ᠵᠢᠯ'],a:2,e:'ᠮᠣᠩᠭᠣᠯ ᠪᠥᠬᠡ 7000 ᠭᠠᠷᠤᠢ ᠵᠢᠯ ᠦᠨ ᠲᠡᠦᠬᠡᠲᠡᠢ ᠳᠡᠯᠡᠬᠡᠢ ᠶᠢᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠡᠷᠲᠡᠨ ᠦ ᠲᠡᠮᠡᠴᠡᠭᠡᠨ ᠦ ᠤᠷᠠᠯᠠᠯ ᠤᠨ ᠨᠢᠭᠡ᠃'},
+    {q:'ᠪᠥᠬᠡ ᠶᠢᠨ ᠡᠬᠢᠨ ᠦ ᠴᠣᠯ᠎ᠠ ᠠᠯᠢ ᠨᠢ ᠪᠣᠢ?',opts:['ᠵᠠᠭᠠᠨ','ᠬᠠᠷᠴᠠᠭᠠᠢ','ᠨᠠᠴᠢᠨ','ᠠᠷᠰᠯᠠᠨ'],a:2,e:'ᠨᠠᠴᠢᠨ — ᠪᠥᠬᠡ ᠶᠢᠨ ᠡᠬᠢᠨ ᠦ ᠴᠣᠯ᠎ᠠ᠃ ᠱᠤᠪᠤᠭᠤᠳ ᠤᠨ ᠬᠠᠭᠠᠨ ᠨᠠᠴᠢᠨ ᠢᠶᠠᠷ ᠨᠡᠷᠡᠯᠡᠭᠰᠡᠨ᠃'}
   ],
   oppSelectTitle:'ᠡᠰᠡᠷᠭᠦᠴᠡᠭᠴᠢ ᠰᠣᠩᠭᠣᠭᠠᠷᠠᠢ:',oppLocked:'🔒 ᠴᠣᠯ᠎ᠠ ᠱᠠᠭᠠᠷᠳᠠᠭᠳᠠᠨ᠎ᠠ',
   bRuleSelect:'⚡ ᠮᠡᠬᠡ ᠰᠣᠩᠭᠣᠭᠠᠷᠠᠢ!',
@@ -2095,19 +2124,25 @@ function buildCult() {
 
 function setCostume(i){ gs.costume=i; buildCult(); }
 
-function startQuiz(){ quizState={q:0,score:0}; renderQuiz(); }
+function startQuiz(){
+  // shuffle a copy of the quiz so order is different each time
+  const pool = [...S[lang].quiz].sort(() => Math.random() - 0.5);
+  quizState = {q:0, score:0, pool};
+  renderQuiz();
+}
 
 function renderQuiz(){
   if(!quizState) return;
   const tx=S[lang];
   const qa=el('quizArea'); if(!qa) return;
-  if(quizState.q>=tx.quiz.length){
-    qa.innerHTML=`<div class="ib green">${tx.quizDone}</div><div class="ib">${sprintf(tx.quizScore2,quizState.score,tx.quiz.length)}</div><button class="btn btn-sm" onclick="startQuiz()">${tx.quizRetry}</button>`;
+  const pool = quizState.pool || tx.quiz;
+  if(quizState.q>=pool.length){
+    qa.innerHTML=`<div class="ib green">${tx.quizDone}</div><div class="ib">${sprintf(tx.quizScore2,quizState.score,pool.length)}</div><button class="btn btn-sm" onclick="startQuiz()">${tx.quizRetry}</button>`;
     return;
   }
-  const q=tx.quiz[quizState.q];
+  const q=pool[quizState.q];
   qa.innerHTML=`
-    <div style="font-size:.82em;margin-bottom:10px;color:rgba(255,255,255,.9)">${sprintf(tx.quizScore,quizState.q+1,tx.quiz.length,quizState.score)}</div>
+    <div style="font-size:.82em;margin-bottom:10px;color:rgba(255,255,255,.9)">${sprintf(tx.quizScore,quizState.q+1,pool.length,quizState.score)}</div>
     <div style="font-size:.86em;font-weight:bold;margin-bottom:8px">${q.q}</div>
     ${q.opts.map((o,i)=>`<div class="qopt" id="qo${i}" onclick="ansQuiz(${i})">${o}</div>`).join('')}
     <div id="quizExpl" style="margin-top:8px;font-size:.78em;color:rgba(255,255,255,.5)"></div>
@@ -2115,7 +2150,9 @@ function renderQuiz(){
 }
 
 function ansQuiz(i){
-  const tx=S[lang]; const q=tx.quiz[quizState.q];
+  const tx=S[lang];
+  const pool = quizState.pool || tx.quiz;
+  const q=pool[quizState.q];
   const correct=i===q.a;
   if(correct) quizState.score++;
   document.querySelectorAll('.qopt').forEach((o,idx)=>{
@@ -2342,6 +2379,7 @@ async function doSubmitScore() {
     setTimeout(()=>{ if(msg) msg.textContent=''; }, 3000);
   }
 }
+
 
 // ═══ INIT ═══
 (function init(){
